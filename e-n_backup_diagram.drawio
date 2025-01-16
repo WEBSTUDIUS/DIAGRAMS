@@ -1,17 +1,49 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.5" pages="2">
   <diagram id="ykcoprw3lmcuyB5p3u-q" name="Backup class (main)">
-    <mxGraphModel dx="1434" dy="833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1195" dy="694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="FqSsDGNKy8bBFyhwUsow-1" value="&lt;div&gt;CRON&lt;/div&gt;Запуск резервного копирования" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="331" y="40" width="166" height="80" as="geometry" />
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FqSsDGNKy8bBFyhwUsow-1" target="0Z_Cq0QArTlGkc0pEMjF-10">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-1" value="&lt;div&gt;class Backup()-&amp;gt;create()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="328" y="300" width="172" height="80" as="geometry" />
+        <mxCell id="FqSsDGNKy8bBFyhwUsow-1" value="&lt;div&gt;CRON&lt;/div&gt;Запуск команды для резервного копирования" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="329.5" y="40" width="169" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-2" value="&lt;div&gt;ItPanel - check.php&lt;/div&gt;&lt;div&gt;Запуск общего класса, отвечающего за непосредственное копирование&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="328" y="170" width="172" height="80" as="geometry" />
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-1" value="&lt;div&gt;Получаем нужную информацию о сделках и квартире в сделке&lt;/div&gt;&lt;div&gt;new Deals()-&amp;gt;get()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="497" y="505" width="172" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0Z_Cq0QArTlGkc0pEMjF-2" target="0Z_Cq0QArTlGkc0pEMjF-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-2" value="Создаем оъект класса Backup(), запускаем метод create(), в котором организована общая логика работы бэкапа" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="497" y="375" width="172" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0Z_Cq0QArTlGkc0pEMjF-3" target="0Z_Cq0QArTlGkc0pEMjF-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0Z_Cq0QArTlGkc0pEMjF-3" target="0Z_Cq0QArTlGkc0pEMjF-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-3" value="запуск успешен?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="369.5" y="270" width="89" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-6" value="Да" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="275" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-7" value="&lt;div&gt;Записать ошибку в лог&lt;/div&gt;&lt;div&gt;Уведомить админа&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="375" width="172" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-9" value="Нет" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="275" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0Z_Cq0QArTlGkc0pEMjF-10" target="0Z_Cq0QArTlGkc0pEMjF-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-10" value="&lt;div&gt;ItPanel - check.php&lt;/div&gt;&lt;div&gt;Запуск общего класса, отвечающего за непосредственное копирование&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="329.5" y="160" width="169" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
