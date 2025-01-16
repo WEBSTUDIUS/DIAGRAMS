@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.5" pages="2">
   <diagram id="ykcoprw3lmcuyB5p3u-q" name="Backup class (main)">
-    <mxGraphModel dx="1195" dy="694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2206" dy="1282" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -9,6 +9,9 @@
         </mxCell>
         <mxCell id="FqSsDGNKy8bBFyhwUsow-1" value="&lt;div&gt;CRON&lt;/div&gt;Запуск команды для резервного копирования" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="329.5" y="40" width="169" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0Z_Cq0QArTlGkc0pEMjF-1" target="0Z_Cq0QArTlGkc0pEMjF-14">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="0Z_Cq0QArTlGkc0pEMjF-1" value="&lt;div&gt;Получаем нужную информацию о сделках и квартире в сделке&lt;/div&gt;&lt;div&gt;new Deals()-&amp;gt;get()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="497" y="505" width="172" height="80" as="geometry" />
@@ -44,6 +47,15 @@
         </mxCell>
         <mxCell id="0Z_Cq0QArTlGkc0pEMjF-10" value="&lt;div&gt;ItPanel - check.php&lt;/div&gt;&lt;div&gt;Запуск общего класса, отвечающего за непосредственное копирование&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="329.5" y="160" width="169" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0Z_Cq0QArTlGkc0pEMjF-14" target="0Z_Cq0QArTlGkc0pEMjF-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-14" value="&lt;div&gt;Формируем структуру папок из полученных данных из сделки&lt;/div&gt;&lt;div&gt;new Documents()-&amp;gt;get()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="497" y="640" width="172" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0Z_Cq0QArTlGkc0pEMjF-16" value="&lt;div&gt;Выгружаем структуру папок на ЯДиск&lt;/div&gt;&lt;div&gt;new Upload()-&amp;gt;create()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="497" y="780" width="172" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
