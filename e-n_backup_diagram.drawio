@@ -197,32 +197,25 @@
         <mxCell id="4G2rjW0i8QBMgnAK9tCT-6" value="Create Array with Main folder structure" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="620" y="80" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4G2rjW0i8QBMgnAK9tCT-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4G2rjW0i8QBMgnAK9tCT-8" target="4G2rjW0i8QBMgnAK9tCT-10">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="4G2rjW0i8QBMgnAK9tCT-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4G2rjW0i8QBMgnAK9tCT-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="354" y="280" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="4G2rjW0i8QBMgnAK9tCT-8" value="Create (upload) this structure to Y.Disk" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="250" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4G2rjW0i8QBMgnAK9tCT-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4G2rjW0i8QBMgnAK9tCT-10" target="4G2rjW0i8QBMgnAK9tCT-12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="4G2rjW0i8QBMgnAK9tCT-10" value="Get remote main folder link" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="354" y="250" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="4G2rjW0i8QBMgnAK9tCT-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4G2rjW0i8QBMgnAK9tCT-12" target="4G2rjW0i8QBMgnAK9tCT-14">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="4G2rjW0i8QBMgnAK9tCT-12" value="Write down Remote link to Deal&#39;s Excel File" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4G2rjW0i8QBMgnAK9tCT-15" value="Get respond for returning ArRespond to ItPanel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="620" y="250" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4G2rjW0i8QBMgnAK9tCT-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4G2rjW0i8QBMgnAK9tCT-14" target="4G2rjW0i8QBMgnAK9tCT-15">
+        <mxCell id="adiJZ82dRNihdKRMFoA8-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="adiJZ82dRNihdKRMFoA8-1" target="4G2rjW0i8QBMgnAK9tCT-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4G2rjW0i8QBMgnAK9tCT-14" value="Upload Deal Excel File to Y.Disk" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="420" width="120" height="60" as="geometry" />
+        <mxCell id="adiJZ82dRNihdKRMFoA8-1" value="write&amp;nbsp;&lt;div&gt;Deal File Upload Status&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="250" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4G2rjW0i8QBMgnAK9tCT-15" value="Get respond for returning ArRespond to ItPanel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="354" y="420" width="120" height="60" as="geometry" />
+        <mxCell id="adiJZ82dRNihdKRMFoA8-4" value="foreach" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="170" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
