@@ -159,11 +159,17 @@
         <mxCell id="qxar2i6eTfuTEpqdG3V1-14" value="Upload Deal Excel File to Y.Disk" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="74" y="220" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="IJSFXsrS8zjsBF0ilVhz-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qxar2i6eTfuTEpqdG3V1-16" target="IJSFXsrS8zjsBF0ilVhz-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="qxar2i6eTfuTEpqdG3V1-16" value="Get respond for returning ArRespond to ItPanel" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="348" y="220" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="WD6d2D5iZZK7LP_Fm_cr-1" value="foreach" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="244" y="50" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IJSFXsrS8zjsBF0ilVhz-1" value="write&amp;nbsp;&lt;div&gt;Deal File Upload Status&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="614" y="220" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
