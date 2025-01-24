@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.6" pages="3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.6" pages="4">
   <diagram id="ykcoprw3lmcuyB5p3u-q" name="Backup class (main)">
     <mxGraphModel dx="1434" dy="1599" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -219,6 +219,53 @@
         </mxCell>
         <mxCell id="adiJZ82dRNihdKRMFoA8-5" value="TODO - пред&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;усмотреть удаление файлов&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="414" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="PBUkdppHjNOrL1gpgBlJ" name="StatusFileTable">
+    <mxGraphModel dx="989" dy="1401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7JjFN7bQw42cseU2SsIs-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="7JjFN7bQw42cseU2SsIs-1" target="7JjFN7bQw42cseU2SsIs-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-1" value="update file" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7JjFN7bQw42cseU2SsIs-2" target="7JjFN7bQw42cseU2SsIs-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7JjFN7bQw42cseU2SsIs-2" target="7JjFN7bQw42cseU2SsIs-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-2" value="File save" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7JjFN7bQw42cseU2SsIs-3" target="7JjFN7bQw42cseU2SsIs-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-3" value="File delete" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-6" value="ID: 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="155" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-7" value="ID: 2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="265" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-8" value="ID: 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="385" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-9" value="При обновлении файл удаляется - его мы можем найти по айди в таблице и пометить на удаление.&lt;div&gt;При этом, в следующей выгрузке, мы его СНАЧАЛА удалим с яндекс диска, а потом запишем новый, так как в таблице обмена айдишника нового файла нет.&lt;/div&gt;&lt;div&gt;Также и с новыми файлами. Их в таблице не будет, поэтому они выгрузятся по-умолчанию.&amp;nbsp;&lt;/div&gt;&lt;div&gt;Т.е, нам нужно отслеживать только событие удаления.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" width="410" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-10" value="Вот его мы удалим на Ядиске" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7JjFN7bQw42cseU2SsIs-11" value="Вот его мы запишем на Ядиске" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="260" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
